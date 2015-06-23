@@ -1,0 +1,22 @@
+{
+  "name": "html-starter",
+  "title": "HTML Starter is a quick front-end boilerplate and workflows",
+  "author": "Kenniko Okta Putra",
+  "url": "https://github.com/kenniko/html-starter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kenniko/html-starter.git"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-header": "latest",
+    "gulp-jshint": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest"
+  }
+}

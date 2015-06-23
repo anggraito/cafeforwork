@@ -1,0 +1,16 @@
+{
+  "name": "html-starter",
+  "version": "1.0.0",
+  "dependencies": {
+    "modernizr": "latest",
+    "jquery": "latest",
+    "retinajs": "latest",
+    "bourbon": "latest",
+    "neat": "latest",
+    "bootstrap": "latest",
+    "gmap3": "latest",
+    "fitvids": "latest",
+    "FlexSlider-Scss": "latest",
+    "jquery.lazyload": "latest"
+  }
+}
