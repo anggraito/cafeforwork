@@ -1785,9 +1785,9 @@ a:focus {
   color: #fff;
   background-color: #ED018D; }
 
-.wrp {
-  padding-left: 8%;
-  padding-right: 8%; }
+.container {
+  margin: 0px auto;
+  padding: 0px 8%; }
 
 p {
   -ms-word-break: break-all;
@@ -1801,48 +1801,177 @@ p {
   -webkit-hyphenate-after: 3;
   hyphenate-lines: 3; }
 
-.head {
-  background-color: white; }
-  .head .header .logo {
+[class*='bit-'] {
+  float: left;
+  padding: 10px; }
+
+[class*='bit-']:last-of-type {
+  padding-right: 10px;
+  float: right; }
+
+.bit-1 {
+  width: 100%; }
+
+.bit-2 {
+  width: 50%; }
+
+.bit-3 {
+  width: 33.33%; }
+
+.bit-4 {
+  width: 25%; }
+
+.bit-5 {
+  width: 20%; }
+
+.bit-6 {
+  width: 16.6666666667%; }
+
+.bit-7 {
+  width: 14.2857142857%; }
+
+.bit-8 {
+  width: 12.5%; }
+
+.bit-9 {
+  width: 11.1111111111%; }
+
+.bit-10 {
+  width: 10%; }
+
+.bit-11 {
+  width: 9.09090909091%; }
+
+.bit-12 {
+  width: 8.33%; }
+
+/* Landscape and down
+===============================*/
+@media (max-width: 480px) {
+  .bit-1 {
+    width: 100%; }
+  .bit-2 {
+    width: 100%; }
+  .bit-3 {
+    width: 100%; }
+  .bit-4 {
+    width: 100%; }
+  .bit-5 {
+    width: 100%; }
+  .bit-6 {
+    width: 100%; }
+  .bit-7 {
+    width: 100%; }
+  .bit-8 {
+    width: 100%; }
+  .bit-9 {
+    width: 100%; }
+  .bit-10 {
+    width: 100%; }
+  .bit-11 {
+    width: 100%; }
+  .bit-12 {
+    width: 100%; }
+  .frame .bit-4:nth-child(2) {
+    float: right; }
+  .frame .bit-4:nth-child(3) {
+    clear: both;
     float: left; }
-    .head .header .logo img {
-      max-height: 80px; }
-  .head .navigation .nav-list {
-    display: inline-block;
-    list-style: none; }
-    .head .navigation .nav-list .sub-menu {
+  .frame .bit-4:nth-child(4) {
+    float: right; } }
+
+/* Landscape to Tablet Portrait
+===============================*/
+@media (min-width: 481px) and (max-width: 800px) {
+  .bit-2 {
+    width: 100%; }
+  .bit-4 {
+    width: 50%; }
+  .bit-5 {
+    width: 100%; }
+  .bit-6 {
+    width: 50%; }
+  .bit-7 {
+    width: 100%; }
+  .bit-8 {
+    width: 50%; }
+  .bit-9 {
+    width: 100%; }
+  .bit-10 {
+    width: 50%; }
+  .bit-11 {
+    width: 100%; }
+  .bit-12 {
+    width: 50%; } }
+
+/* Landscape Tablet to Desktop
+===============================*/
+@media (min-width: 801px) and (max-width: 1100px) {
+  .bit-2 {
+    width: 100%; }
+  .bit-4 {
+    width: 50%; }
+  .bit-7 {
+    width: 100%; }
+  .bit-8 {
+    width: 50%; }
+  .bit-10 {
+    width: 50%; }
+  .bit-12 {
+    width: 50%; } }
+
+.header {
+  background-color: white; }
+  .header .logo img {
+    max-height: 80px; }
+  .header .navigation {
+    margin-top: 25px;
+    text-align: right; }
+    .header .navigation ul {
+      margin: 0;
+      padding: 0; }
+    .header .navigation li {
+      display: inline-block;
+      margin-left: 30px; }
+      .header .navigation li a {
+        font-size: 16px; }
+    .header .navigation .nav-list {
       list-style: none; }
+      .header .navigation .nav-list .sub-menu {
+        list-style: none; }
 
 .steps {
   background-color: orange; }
   .steps .steps-wrap {
     margin: 0;
     padding-top: 15px;
-    padding-bottom: 35px; }
-    .steps .steps-wrap .easy {
-      text-align: center;
-      padding-bottom: 5px; }
+    padding-bottom: 15px; }
+    .steps .steps-wrap h2 {
+      text-align: center; }
+
+.sct-title {
+  padding: 10px 0px; }
 
 .review-list .work-item img {
   max-height: 150px; }
 
-.review-list .work-item a {
-  padding: 5px; }
-
-.section-rate .rating-wrap {
+.rate .rating-wrap .title-wrap {
+  text-align: center;
   background-color: orange; }
-  .section-rate .rating-wrap .title-wrap {
-    text-align: center; }
-  .section-rate .rating-wrap .filter-wrap {
-    background-color: #fff; }
-    .section-rate .rating-wrap .filter-wrap .filter-system {
-      list-style: none;
-      display: table;
-      margin: 0 auto; }
-      .section-rate .rating-wrap .filter-wrap .filter-system .li {
-        display: inline-block; }
 
-.section-rate .rating-view .rating-item img {
+.rate .rating-wrap .filter-wrap {
+  background-color: white; }
+  .rate .rating-wrap .filter-wrap ul {
+    list-style: none;
+    text-align: center; }
+  .rate .rating-wrap .filter-wrap li {
+    display: inline-block; }
+
+.rate .rating-view .rating-item img {
   max-height: 180px; }
-  .section-rate .rating-view .rating-item img .star-wrap .star .icon-star-full:before {
+  .rate .rating-view .rating-item img .star-wrap .star .icon-star-full:before {
     content: "\e9d9"; }
+
+.footer {
+  background-color: #101010;
+  color: #707070; }

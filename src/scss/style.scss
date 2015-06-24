@@ -56,9 +56,12 @@
     color: #fff;
     background-color: $clr-brand;
   }
-  .wrp{
-    padding-left: 8%;
-    padding-right: 8%
+
+  .container{
+    margin: 0px auto;
+    padding: 0px 8%;
+    // padding-left: 180px;
+    // padding-right: 180px;
   }
   p {
     -ms-word-break: break-all;
@@ -80,25 +83,196 @@
     //      -o-font-feature-settings: "liga", "dlig";
     //         font-feature-settings: "liga", "dlig";
   }
+//-----------------------------------*\
+//  GRID SYSTEM
+//-----------------------------------*/
+  [class*='bit-'] {
+    float: left;
+    padding: 10px
+  }
+
+  [class*='bit-']:last-of-type{
+    padding-right: 10px;
+    float: right
+  }
+//----------------------------------*\
+// MAIN GRID
+//----------------------------------*/
+  .bit-1 {
+    width: 100%
+  }
+  .bit-2 {
+  width: 50%;
+  }
+  .bit-3 {
+  width: 33.33%;
+  }
+  .bit-4 {
+  width: 25%;
+  }
+  .bit-5 {
+  width: 20%;
+  }
+  .bit-6 {
+  width: 16.6666666667%;
+  }
+  .bit-7 {
+  width: 14.2857142857%;
+  }
+  .bit-8 {
+  width: 12.5%;
+  }
+  .bit-9 {
+  width: 11.1111111111%;
+  }
+  .bit-10 {
+  width: 10%;
+  }
+  .bit-11 {
+  width: 9.09090909091%;
+  }
+  .bit-12 {
+  width: 8.33%;
+  }
+
+/* Landscape and down
+===============================*/
+@media (max-width: 480px) {
+  .bit-1 {
+    width:100%;
+  }
+  .bit-2 {
+    width:100%;
+  }
+  .bit-3 {
+    width: 100%;
+  }
+  .bit-4 {
+    width: 100%;
+  }
+  .bit-5 {
+    width: 100%;
+  }
+  .bit-6 {
+    width: 100%;
+  }
+  .bit-7 {
+    width: 100%;
+  }
+  .bit-8 {
+    width: 100%;
+  }
+  .bit-9 {
+    width: 100%;
+  }
+  .bit-10 {
+    width: 100%;
+  }
+  .bit-11 {
+    width: 100%;
+  }
+  .bit-12 {
+    width: 100%;
+  }
+  .frame .bit-4:nth-child(2) {
+    float: right;
+  }
+  .frame .bit-4:nth-child(3) {
+    clear: both;
+    float: left;
+  }
+  .frame .bit-4:nth-child(4) {
+    float: right;
+  }
+}
+
+/* Landscape to Tablet Portrait
+===============================*/
+@media (min-width: 481px) and (max-width: 800px) {
+  .bit-2 {
+    width:100%;
+  }
+  .bit-4 {
+    width:50%;
+  }
+  .bit-5 {
+    width:100%;
+  }
+  .bit-6 {
+    width:50%;
+  }
+  .bit-7 {
+    width:100%;
+  }
+  .bit-8 {
+    width: 50%;
+  }
+  .bit-9 {
+    width: 100%;
+  }
+  .bit-10 {
+    width: 50%;
+  }
+  .bit-11 {
+    width: 100%;
+  }
+  .bit-12 {
+    width: 50%;
+  }
+}
+
+/* Landscape Tablet to Desktop
+===============================*/
+@media (min-width: 801px) and (max-width: 1100px) {
+  .bit-2 {
+    width:100%;
+  }
+  .bit-4 {
+    width:50%;
+  }
+  .bit-7 {
+    width:100%;
+  }
+  .bit-8 {
+    width: 50%;
+  }
+  .bit-10 {
+    width: 50%;
+  }
+  .bit-12 {
+    width: 50%;
+  }
+}
+
+
+
 
 //----------------------------------*\
 // Header
 //----------------------------------*/
-.head{
+.header{
   background-color: white;
-  .header {
-    // overflow: hidden;
-    .logo {
-      float: left;
-      img{
-        max-height: 80px;}
+  .logo{
+    img{
+      max-height: 80px;
     }
   }
 
   .navigation{
-    // float: right;
-    .nav-list{
+    margin-top: 25px;
+    text-align: right;
+    ul{
+      margin: 0;
+      padding: 0
+    }
+    li{
       display: inline-block;
+      margin-left: 30px;
+      a{
+         font-size: 16px;
+      }
+    }
+    .nav-list{
       list-style: none;
       // margin-right: 15px;
         .sub-menu{
@@ -109,48 +283,58 @@
 }
 
 .steps{
-background-color: yellow;
+background-color: orange;
   .steps-wrap{
     margin: 0;
-  padding-top: 15px;
-  padding-bottom: 35px;
-    .easy{
-    text-align: center;
-    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    h2{
+      text-align: center
     }
   }
 }
 
+
+.sct-title{
+  padding: 10px 0px;
+}
 .review-list{
   .work-item{
     img{
       max-height: 150px;
     }
-    a{
-      padding: 5px;
-    }
   }
 }
 
-.section-rate{
+.rate{
   .rating-wrap{
-    background-color: orange;
-    .title-wrap{
-      text-align: center;
-    }
-
-    .filter-wrap{
-      background-color: #fff;
-      .filter-system{
-        list-style: none;
-        display: table;
-        margin: 0 auto;
-        .li{
+      .title-wrap{
+      text-align: center; 
+      background-color: orange}
+      .filter-wrap{
+        background-color: white;
+        ul{
+          list-style: none;
+          text-align: center;
+        }
+        li{
           display: inline-block;
         }
       }
     }
-  }
+
+  //   .filter-wrap{
+  //     background-color: #fff;
+  //     .filter-system{
+  //       list-style: none;
+  //       display: table;
+  //       margin: 0 auto;
+  //       .li{
+  //         display: inline-block;
+  //       }
+  //     }
+  //   }
+  // }
 
   .rating-view{
     .rating-item{
@@ -165,4 +349,9 @@ background-color: yellow;
       }
     }
   }
+}
+
+.footer{
+  background-color: #101010;
+  color: #707070;
 }
