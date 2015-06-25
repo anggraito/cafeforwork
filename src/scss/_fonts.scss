@@ -23,6 +23,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu:before {
+    content: "\e9bd";
+}
 .icon-eye:before {
 	content: "\e000";
 }
@@ -1378,4 +1381,19 @@
 }
 .icon-IcoMoon:before {
 	content: "\e7c2";
+}
+.icon-star-full:before {
+    content: "\e9d9";
+}
+.icon-google-plus2:before {
+    content: "\ea89";
+}
+.icon-twitter:before {
+    content: "\ea91";
+}
+.icon-youtube3:before {
+    content: "\ea99";
+}
+.icon-linkedin2:before {
+    content: "\eac9";
 }

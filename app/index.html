@@ -24,10 +24,14 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <script src="assets/js/libs/modernizr.js"></script>
+    <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
 
 
   <body>
+  <div class="burger-opened">
+  
+  </div>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -39,13 +43,33 @@
   <div class="header">
     <div class="container">
       <header class="header-wrap">
-        <nav class="bit-4 logo">
+        <nav class="bit-21 logo">
           <img src="assets/img/logo.png" alt="Logo Image">
         </nav>
-      
+        
+       
+        <div class="bit-2 ico-burger mobile-only">
+          <div class="menu-burger"> test
+            <span class="icon-menu"></span>
+          </div>
+        </div>
 
+        <div class="bit-1 burger">
+          <div class="nav-burger-close"></div>
+            <nav class="nav-burger">
+              <ul>  
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Food Rating</a></li>
+                <li><a href="#">Highest Rating</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+      
         <!-- Navigation -->
-        <nav class="bit-2 navigation">
+        <nav class="bit-2 navigation mobile-hidden">
          <ul class="nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">Rating</a>
@@ -101,7 +125,6 @@
                 <h3 class="bl-title">Lorem ipsum dolor sit amet, consectetuer</h3>
                 <p>Andit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta</p>
         </div> 
-        <h2>Its Easy</h2>
       </div> 
     </div>
   </section>
@@ -110,25 +133,22 @@
     <div class="review-title">
       <div class="container">
         <div class="review-wrap">
-          <div class="title-wrap">
              <h2 class="sct-title">Cafe <b>Review</b></h2>
-          <div class="bit-3">
-              <a href="#" class="work-item" data-toggle="modal" data-target="#myModal"><img src="assets/img/review-4.jpg" alt=""></a>
-              <h3 class="judul-artikel">Forty Cafe</h3>
-              <p class="kutipan-artikel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nulla </p>
-          </div> 
-          <div class="bit-3">
-              <a href="#" class="work-item" data-toggle="modal" data-target="#myModal"><img src="assets/img/review-4.jpg" alt=""></a>
-              <h3 class="judul-artikel">Forty Cafe</h3>
-              <p class="kutipan-artikel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nulla </p>
-          </div> 
-          <div class="bit-3">
-              <a href="#" class="work-item" data-toggle="modal" data-target="#myModal"><img src="assets/img/review-4.jpg" alt=""></a>
-              <h3 class="judul-artikel">Forty Cafe</h3>
-              <p class="kutipan-artikel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nulla </p>
-          </div> 
-          <h2 class="sct-title">Cafe <b>Review</b></h2>
-          </div>
+              <div class="bit-3 review-item">
+                <a href="#" class="work-item" data-toggle="modal" data-target="#myModal"><img src="assets/img/review-4.jpg" alt=""></a>
+                <h3 class="judul-artikel">Forty Cafe</h3>
+                <p class="kutipan-artikel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation  </p>
+              </div> 
+              <div class="bit-3 review-item">
+                <a href="#" class="work-item" data-toggle="modal" data-target="#myModal"><img src="assets/img/review-4.jpg" alt=""></a>
+                <h3 class="judul-artikel">Forty Cafe</h3>
+                <p class="kutipan-artikel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation  </p>
+              </div> 
+              <div class="bit-3 review-item">
+                <a href="#" class="work-item" data-toggle="modal" data-target="#myModal"><img src="assets/img/review-4.jpg" alt=""></a>
+                <h3 class="judul-artikel">Forty Cafe</h3>
+                <p class="kutipan-artikel">Lunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+              </div> 
         </div>
       </div>
     </div>
@@ -144,15 +164,45 @@
             </div>
 
             <div class="filter-wrap">
-             <ul class="filter-system">
-              <li><a href="#" class="current">HIGHEST RATING</a></li>
-              <li><a href="#">FOOD RATING</a></li>
+              <ul class="filter-system">
+                <li class="firstItem active"><a data-toogle="tab" href="#">HIGHEST RATING</a></li>
+                <li class="lastItem"><a data-toogle="tab" href="#">FOOD RATING</a></li>
               </ul>
-           </div>
-        </div>
-        
-        <div class="rating-view">
-          <div class="bit-4 rating-item">
+              <div class="rating-view">
+          <div class="rating-content fade active in" id="tab1">
+            <div class="bit-4 rating-item">
+              <a href=""><img src="assets/img/img-3.jpg"></a>
+              <div class="star-wrap">
+                <h3>Cafe Cafo</h3>
+                  <ul class="star">
+                     <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                  </ul>
+              </div>
+              <p class="alamat"> Bougenville Street 56</p>
+              <p class="open"> Open Hours : 09.00 AM - 20.00 PM</p>
+              <a href="#">Maps</a>
+            </div>
+            <div class="bit-4 rating-item">
+            <a href=""><img src="assets/img/img-4.jpg"></a>
+              <div class="star-wrap">
+                <h3>Cafe Cafo</h3>
+                  <ul class="star">
+                     <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                  </ul>
+              </div>
+              <p class="alamat"> Bougenville Street 56</p>
+              <p class="open"> Open Hours : 09.00 AM - 20.00 PM</p>
+              <a href="#">Maps</a>
+            </div>
+            <div class="bit-4 rating-item">
             <a href=""><img src="assets/img/img-3.jpg"></a>
               <div class="star-wrap">
                 <h3>Cafe Cafo</h3>
@@ -165,10 +215,28 @@
                   </ul>
               </div>
               <p class="alamat"> Bougenville Street 56</p>
-              <p class="open"> 09.00 AM - 20.00 PM</p>
+              <p class="open"> Open Hours : 09.00 AM - 20.00 PM</p>
               <a href="#">Maps</a>
-          </div>
-          <div class="bit-4 rating-item">
+            </div>
+            <div class="bit-4 rating-item">
+            <a href=""><img src="assets/img/img-4.jpg"></a>
+              <div class="star-wrap">
+                <h3>Cafe Cafo</h3>
+                  <ul class="star">
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                  </ul>
+              </div>
+              <p class="alamat"> Bougenville Street 56</p>
+              <p class="open"> Open Hours : 09.00 AM - 20.00 PM</p>
+              <a href="#">Maps</a>
+            </div>
+            </div>
+          <div class="rating-content fade" id="tab2">
+            <div class="bit-4 rating-item">
             <a href=""><img src="assets/img/img-3.jpg"></a>
               <div class="star-wrap">
                 <h3>Cafe Cafo</h3>
@@ -181,10 +249,26 @@
                   </ul>
               </div>
               <p class="alamat"> Bougenville Street 56</p>
-              <p class="open"> 09.00 AM - 20.00 PM</p>
+              <p class="open"> Open Hours : 09.00 AM - 20.00 PM</p>
               <a href="#">Maps</a>
-          </div>
-          <div class="bit-4 rating-item">
+            </div>
+            <div class="bit-4 rating-item">
+            <a href=""><img src="assets/img/img-4.jpg"></a>
+              <div class="star-wrap">
+                <h3>Cafe Cafo</h3>
+                  <ul class="star">
+                     <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                    <i class="icon-star-full"></i>
+                  </ul>
+              </div>
+              <p class="alamat"> Bougenville Street 56</p>
+              <p class="open"> Open Hours : 09.00 AM - 20.00 PM</p>
+              <a href="#">Maps</a>
+            </div>
+            <div class="bit-4 rating-item">
             <a href=""><img src="assets/img/img-3.jpg"></a>
               <div class="star-wrap">
                 <h3>Cafe Cafo</h3>
@@ -197,11 +281,11 @@
                   </ul>
               </div>
               <p class="alamat"> Bougenville Street 56</p>
-              <p class="open"> 09.00 AM - 20.00 PM</p>
+              <p class="open"> Open Hours : 09.00 AM - 20.00 PM</p>
               <a href="#">Maps</a>
-          </div>
-          <div class="bit-4 rating-item">
-            <a href=""><img src="assets/img/img-3.jpg"></a>
+            </div>
+            <div class="bit-4 rating-item">
+            <a href=""><img src="assets/img/img-4.jpg"></a>
               <div class="star-wrap">
                 <h3>Cafe Cafo</h3>
                   <ul class="star">
@@ -213,10 +297,13 @@
                   </ul>
               </div>
               <p class="alamat"> Bougenville Street 56</p>
-              <p class="open"> 09.00 AM - 20.00 PM</p>
+              <p class="open"> Open Hours : 09.00 AM - 20.00 PM</p>
               <a href="#">Maps</a>
+            </div>
           </div>
-          <h2>Featured Rating</h2>
+          <div class="clearfix"></div>
+          </div>
+          </div>
         </div>
       </div>
     </div> 
@@ -226,6 +313,7 @@
     <footer class="footer">
       <div class="container">
         <div class="bit-2 widget-footer">
+        <h3>Contact</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -247,11 +335,11 @@
                 <input type="submit" value="Subscribe">
              </form>
           </div>
-        </div>
 
-        <div class="widget-footer copyright">
-          © 2015 Work Cafe<br>Site by Work Cafe Design
+          <div class="widget-footer copyright">
+          © 2015 Work Cafe . Site by Work Cafe Design
         </div> 
+        </div>
       </div>
     </footer>
 
@@ -280,6 +368,63 @@
     <!-- // <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script> -->
     <script src="library/js/libs/retina.min.js"></script>
     <script src="library/js/scripts.min.js"></script>
+    <script type="text/javascript">
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 150) { // this refers to window
+                $(".nav").addClass("active");
+            }
+            else {
+              $(".nav").removeClass("active");
+            }
+        });
+
+        $(".menu-burger").click(function() {
+              menuburger();
+            });
+           
+            $(".nav-burger-close").click(function() {
+              menuburger();
+            });
+
+        function menuburger(){
+
+              
+              if($("body").hasClass("active")){
+                // alert("test lagi")
+
+                $("body").removeClass("active");
+                $(".burger").removeClass("active");
+              }
+              else{
+                $("body").addClass("active");
+                $(".burger").addClass("active");
+                  
+              }
+           }
+                  $(this).addClass("active");
+                  $('.firstItem').fadeIn(100);
+                });
+/*close popups*/
+
+                      jQuery(function($){
+                        $(document).on('mouseup touchend', function (e){ 
+                            var div = $('.js-popup-content'); 
+                                        if (!div.is(e.target) 
+                                                && div.has(e.target).length === 0) { 
+                                            div.fadeOut(100); 
+                                            $('.js-popup-open').removeClass("active");
+                                        }
+                                    });
+                                });
+
+                                $('.icon-close').mouseup(function(){
+                                    $('.js-popup-content').fadeOut(100);
+                                    $('.js-popup-open').removeClass("active");
+                                });
+        </script>
+
+
 
      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
