@@ -22,7 +22,15 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+.icon-instagram:before {
+    content: "\e602";
+}
+.icon-twitter:before {
+    content: "\e601";
+}
+.icon-facebook:before {
+    content: "\e603";
+}
 .icon-menu:before {
     content: "\e9bd";
 }
