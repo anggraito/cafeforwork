@@ -92,7 +92,7 @@
   }
 
   [class*='bit-']:last-of-type{
-    padding-right: 10px;
+    padding-right: 0px;
     float: right
   }
 //----------------------------------*\
@@ -296,6 +296,7 @@
   display: inline-block;
   .header{
     background-color: #fff;
+    bottom: 0;
     .logo{
       padding: 15px 10px;
     }
@@ -305,8 +306,8 @@
       background-color: #FCD121;
     }
     .more{
+      padding: 0 17px;
       .btn {
-        margin:0 10px;
         background-color: #fff;
         border-color: #FCD121;
       }
@@ -358,13 +359,26 @@
       }
     }
     .bottom{
-    background-color: #4D4A49;
-    padding:10px 10px;
-    margin-top:112px; 
-    .social-media{
-      color: #fff;
+      background-color: #4D4A49;
+      padding:10px 10px;
+      margin-top:80px; 
+      .social-media{
+        padding: 10px 0;
+        margin-left: 5px;
+          a{
+          padding-left: 20px;
+          color: #EFEFEF;
+          text-decoration: none;
+        }
+      }
+      a{
+      color: #EFEFEF;
+      }
+      .copyright{
+         color: #EFEFEF;
       }
     }
+
   }
 }
 
@@ -373,7 +387,7 @@
 //----------------------------------*/
 
 .body{
-  margin: 0 0 0 180px;
+  margin-left:15%;
   position: absolute;
   padding: 0;
   .guide-wrap{
@@ -392,6 +406,11 @@
        color: #A1A1A1;
        font-size: 10px;
       }
+      .title-cafe{
+        color: #4A4746;
+        font-size: 16px;
+        font-weight: bold;
+      }
     }
   }
 
@@ -406,10 +425,38 @@
     h3{
       font-size: 16px;
     }
+    .review-list{
+      .white-wrapper{
+        background-color: #fff;
+        padding: 5px;
+        .title-cafe{
+          color: #569FD7;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .loved{
+           border-bottom: 2px solid #EFEFEF;
+           padding-bottom: 5px;
+           margin-left: 5px;
+           .icon-heart{
+            font-size: 16px;
+            margin-right: 5px;
+           }
+        }
+        .prof{
+          margin: 0;
+          color: #A1A1A1;
+          img{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
   }
 
   .popular-wrap{
     padding: 0 10px;
+    display: inline-block;
     .title-guide{
       border-bottom: 1px solid #FCD121;
       color: #7E7058;
@@ -420,24 +467,29 @@
    
     ul{
       list-style: none;
-      margin: 25px 0;
+      padding-left:20px;
       li{
         display: inline-block;
+        margin: 25px 0 5px 0;
       }
       a{
         color: #4A4746;
         background-color: #FBD120;
-        border-radius: 20px;
-        padding: 10px;
+        border-radius: 10px;
+        padding:10px 15px;
       }
+      :hover{
+          color: #fff;
+          background-color:#569FD7;
+        }
     }
   }
 
   .event-wrap{
-    background-color: #EFEFEF;
-     display: inline-block;
+     
      padding: 0 10px;
     .title-guide{
+      border-bottom: 1px solid #FCD121;
       font-size: 14px;
       color: #7E7058;
     }
@@ -446,16 +498,21 @@
     }
     ul{
       list-style: none;
-      margin: 50px 0;
+      padding-right: 20px;
+      padding-left: 20px;
       li{
         display: inline-block;
+        margin: 40px 10px 5px 10px;
       }
       a{
         color: #FBD124;
         background-color: #6F6E6C;
         border-radius: 100%;
-        padding: 20px;
-        font-size: 38px;
+        padding: 25px;
+        font-size: 32px;
+      }
+      p{
+        font-size: 12px;
       }
     }
   }
@@ -471,29 +528,39 @@
   bottom: 0;
   right:0;
   padding: 0;
+  padding-right: 0px;
   .upper{
     padding:0 10px;
-    padding-bottom: 25px;
     h3{
       padding-bottom: 15px;
+      font-size: 16px;
+    }
+    .profile-community{
+      margin-bottom: 15px;
+      a{
+        color: #4A4746;
+        text-decoration: none;
+      }
     }
   }
 
   .subscribe{
     background-color: #569FD7;
     color: #fff;
+    padding: 2px 10px 28px 10px;
     h3{
-      font-size: 12px;
+      margin:10px 0 10px 0;
+      font-size: 14px;
       text-align: center;
-      margin: 15 0px;
-      padding: 20px 0;
+      padding: 10px 0;
     }
     p{
       text-align: center;
       padding: 0 15px;
     }
     .btn{
-      color:  #569FD7
+      color:  #569FD7;
+      margin: 5px 40px;
     }
   }
 }
