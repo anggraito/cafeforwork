@@ -1997,20 +1997,20 @@ p {
 
 .header {
   background-color: white; }
-  .header .logo img {
+  .header .header-wrap .logo img {
     max-height: 80px; }
-  .header .ico-burger {
+  .header .header-wrap .ico-burger {
     padding: 0; }
-    .header .ico-burger .menu-burger {
+    .header .header-wrap .ico-burger .menu-burger {
       position: absolute;
       display: block;
       right: 20px;
       top: 25px;
       cursor: pointer;
       color: #fdc92e; }
-  .header .burger {
+  .header .header-wrap .burger {
     padding: 0; }
-    .header .burger .nav-burger {
+    .header .header-wrap .burger .nav-burger {
       position: fixed;
       height: 100%;
       width: 80%;
@@ -2021,21 +2021,21 @@ p {
       -webkit-transition: all 0.5s;
       /* Safari */
       transition: all 0.5s; }
-      .header .burger .nav-burger ul {
+      .header .header-wrap .burger .nav-burger ul {
         float: none;
         padding: 0; }
-      .header .burger .nav-burger li {
+      .header .header-wrap .burger .nav-burger li {
         padding-bottom: 15px;
         padding-top: 15px;
         display: block;
         border-bottom: 1px solid #84735F; }
-        .header .burger .nav-burger li a {
+        .header .header-wrap .burger .nav-burger li a {
           padding: 20px;
           font-size: 16px;
           color: #fff; }
-          .header .burger .nav-burger li a :hover {
+          .header .header-wrap .burger .nav-burger li a :hover {
             padding: 20px; }
-    .header .burger .nav-burger-close {
+    .header .header-wrap .burger .nav-burger-close {
       position: fixed;
       height: 100%;
       width: 20%;

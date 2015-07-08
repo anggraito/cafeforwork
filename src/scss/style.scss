@@ -316,7 +316,8 @@
 
 .header{
   background-color: white;
-  .logo{
+  .header-wrap{
+    .logo{
     img{
       max-height: 80px;
     }
@@ -373,6 +374,7 @@
       -webkit-transition: all 0.5s; /* Safari */
       transition: all 0.5s;
     }
+  }
   }
 
 
