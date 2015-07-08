@@ -664,7 +664,8 @@ p {
         color: #fff;
         background-color: #569FD7; }
   .body .event-wrap {
-    padding: 0 10px; }
+    padding: 0 10px;
+    margin-bottom: 40px; }
     .body .event-wrap .title-guide {
       border-bottom: 1px solid #FCD121;
       font-size: 14px;
@@ -674,7 +675,8 @@ p {
     .body .event-wrap ul {
       list-style: none;
       padding-right: 20px;
-      padding-left: 20px; }
+      padding-left: 20px;
+      margin: 0; }
       .body .event-wrap ul li {
         display: inline-block;
         margin: 40px 10px 5px 10px; }
